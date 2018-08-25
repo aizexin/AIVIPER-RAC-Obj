@@ -7,7 +7,11 @@
 //
 
 #import "AIOneRoute.h"
-
+#import "AITwoViewController.h"
 @implementation AIOneRoute
 
+- (void)presentTwoViewControllerfrom:(UIView<AIViewOneProtocol>*)viewcontroller {
+    AITwoViewController *twoVC = [[AITwoViewController alloc]init];
+    [((UIViewController*)viewcontroller) presentViewController:twoVC animated:YES completion:nil];
+}
 @end

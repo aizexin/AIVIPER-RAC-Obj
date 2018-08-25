@@ -20,6 +20,7 @@
 		457D795C21315093005E960E /* AIInteractorProtocol.h in Sources */ = {isa = PBXBuildFile; fileRef = 457D795B21314DD5005E960E /* AIInteractorProtocol.h */; };
 		457D795D2131528D005E960E /* AIInteractorOne.h in Sources */ = {isa = PBXBuildFile; fileRef = 4541B3952131396700929481 /* AIInteractorOne.h */; };
 		457D79612131649E005E960E /* AIOneRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 457D79602131649E005E960E /* AIOneRoute.m */; };
+		457D79662131979F005E960E /* AITwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 457D79652131979F005E960E /* AITwoViewController.m */; };
 		920E652B2FB852E68BE07E0B /* libPods-AICount.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FA8F81917655E968EEB63E1 /* libPods-AICount.a */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +58,9 @@
 		457D795E213156FB005E960E /* AIViewOneProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIViewOneProtocol.h; sourceTree = "<group>"; };
 		457D795F2131649E005E960E /* AIOneRoute.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIOneRoute.h; sourceTree = "<group>"; };
 		457D79602131649E005E960E /* AIOneRoute.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIOneRoute.m; sourceTree = "<group>"; };
+		457D79642131979F005E960E /* AITwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AITwoViewController.h; sourceTree = "<group>"; };
+		457D79652131979F005E960E /* AITwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AITwoViewController.m; sourceTree = "<group>"; };
+		457D796721319824005E960E /* AIOneRouteProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIOneRouteProtocol.h; sourceTree = "<group>"; };
 		7FA8F81917655E968EEB63E1 /* libPods-AICount.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AICount.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD1A69D5DAC0B9F1A4121B57 /* Pods-AICount.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AICount.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AICount/Pods-AICount.debug.xcconfig"; sourceTree = "<group>"; };
 		E36E433A131A4662EFE1501C /* Pods-AICount.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AICount.release.xcconfig"; path = "Pods/Target Support Files/Pods-AICount/Pods-AICount.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +181,7 @@
 			children = (
 				457D795F2131649E005E960E /* AIOneRoute.h */,
 				457D79602131649E005E960E /* AIOneRoute.m */,
+				457D796721319824005E960E /* AIOneRouteProtocol.h */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -196,6 +201,8 @@
 		457D7963213164CD005E960E /* Two */ = {
 			isa = PBXGroup;
 			children = (
+				457D79642131979F005E960E /* AITwoViewController.h */,
+				457D79652131979F005E960E /* AITwoViewController.m */,
 			);
 			path = Two;
 			sourceTree = "<group>";
@@ -334,6 +341,7 @@
 				457D795D2131528D005E960E /* AIInteractorOne.h in Sources */,
 				457D795C21315093005E960E /* AIInteractorProtocol.h in Sources */,
 				457D79612131649E005E960E /* AIOneRoute.m in Sources */,
+				457D79662131979F005E960E /* AITwoViewController.m in Sources */,
 				4541B36B213136DE00929481 /* ViewController.m in Sources */,
 				4541B371213136DE00929481 /* AICount.xcdatamodeld in Sources */,
 				4541B379213136DF00929481 /* main.m in Sources */,

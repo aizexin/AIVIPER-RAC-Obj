@@ -10,6 +10,7 @@
 #import "AIInteractorOne.h"
 #import "ViewController.h"
 #import "AIPresenterOne.h"
+#import "AIOneRoute.h"
 @interface AppDelegate ()
 
 @end
@@ -25,10 +26,12 @@
     ViewController *view           = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"viewcontroller1"];
     AIInteractorOne *interactor    = [[AIInteractorOne alloc]init];
     AIPresenterOne *presenterOne   = [[AIPresenterOne alloc]init];
+    AIOneRoute *oneRoute           = [[AIOneRoute alloc]init];
+    presenterOne.route     = oneRoute;
     presenterOne.interctor = interactor;
-    presenterOne.view = view;
+    presenterOne.view      = view;
     
-    view.presentOne = presenterOne;
+    view.presentOne        = presenterOne;
     interactor.presentOne  = presenterOne;
     
 //    RACChannelTerminal *channelA = [interactor getCountChannel];

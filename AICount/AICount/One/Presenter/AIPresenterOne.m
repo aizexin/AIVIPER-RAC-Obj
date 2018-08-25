@@ -12,7 +12,15 @@
 
 
 - (RACSignal*)addFunction {
-    return [self.interctor interacotrAddFunction];
+    __weak typeof(self)weakSelf = self;
+    return [[self.interctor interacotrAddFunction]filter:^BOOL(NSNumber *value) {
+        if (value.integerValue > 10) {
+            [weakSelf.route presentTwoViewControllerfrom:weakSelf.view];
+            return NO;
+        } else {
+            return YES;
+        }
+    }];;
 }
 - (RACSignal*)lessFunction {
     return [self.interctor interacotrLessFunction];

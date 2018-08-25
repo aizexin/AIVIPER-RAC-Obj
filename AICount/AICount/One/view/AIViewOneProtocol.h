@@ -9,10 +9,12 @@
 #ifndef AIViewOneProtocol_h
 #define AIViewOneProtocol_h
 
-@class RACSignal;
+@class RACCommand;
+@class RACChannelTerminal;
+
 @protocol AIViewOneProtocol <NSObject>
 
-- (RACSignal*)setLabelNumber:(NSInteger)number;
-
+- (RACCommand*)setLabelNumber;
+- (RACChannelTerminal*)getTextChannel;
 @end
 #endif /* AIViewOneProtocol_h */

@@ -22,6 +22,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+//    RACChannelTerminal *channelA = self.inputTextField.rac_newTextChannel;
+//    RACChannelTerminal *channelB = RACChannelTo(self,label.text);
+//
+//    [[channelA map:^id _Nullable(NSString *value) {
+//        return [NSString stringWithFormat:@"-----%@",value];
+//    }] subscribe:channelB];
+//
+//    [[channelB map:^id _Nullable(id  _Nullable value) {
+//        return [NSString stringWithFormat:@"=====%@",value];
+//    }]subscribe:channelA];
 }
 - (IBAction)onClickLessButton:(id)sender {
     __weak typeof(self)weakSelf = self;
@@ -38,17 +48,20 @@
     }];
 }
 
-- (RACSignal *)setLabelNumber:(NSInteger)number {
-    
+- (RACCommand *)setLabelNumber {
     __weak typeof(self)weakSelf = self;
-    return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-        weakSelf.inputTextField.text = [NSString stringWithFormat:@"%ld",number];
-        [subscriber sendNext:weakSelf.label.text];
-        return [RACDisposable disposableWithBlock:^{
-
+    return [[RACCommand alloc]initWithSignalBlock:^RACSignal * _Nonnull(NSString *input) {
+        return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+            [subscriber sendNext:input];
+            weakSelf.inputTextField.text = input;
+            return [RACDisposable disposableWithBlock:^{
+                
+            }];
         }];
     }];
 }
-
+- (RACChannelTerminal*)getTextChannel {
+    return RACChannelTo(self.inputTextField,text);;
+}
 
 @end

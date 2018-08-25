@@ -31,6 +31,15 @@
     view.presentOne = presenterOne;
     interactor.presentOne  = presenterOne;
     
+//    RACChannelTerminal *channelA = [interactor getCountChannel];
+//    RACChannelTerminal *channelB = [view getTextChannel];
+//
+//    [[channelA map:^id _Nullable(NSNumber *value) {
+//        return [NSString stringWithFormat:@"%ld",value.integerValue];
+//    }]subscribe:channelB];
+//
+//    [channelB subscribe:channelA];
+    
     self.window.rootViewController = view;
     [self.window makeKeyAndVisible];
     return YES;

@@ -21,21 +21,13 @@
         _count = 0;
         __weak typeof(self)weakSelf = self;
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//            [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
-//                [subscriber sendNext:@(3)];
-//                return [RACDisposable disposableWithBlock:^{
-//
-//                }];
-//            }];
-            [[self.presentOne setNumberFunction:3]subscribeNext:^(id  _Nullable x) {
-                
-            }];
+            [[weakSelf.presentOne setNumberFunction] execute:@"123"];
         });
     }
     return self;
 }
-- (NSInteger)getCountNumber {
-    return 0;
+- (RACChannelTerminal*)getCountChannel {
+    return RACChannelTo(self, count);
 }
 
 - (RACSignal*)interacotrAddFunction {

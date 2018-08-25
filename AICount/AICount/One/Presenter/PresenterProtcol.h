@@ -11,6 +11,7 @@
 
 //#import <ReactiveObjC.h>
 @class RACSignal;
+@class RACCommand;
 @protocol AIPresenterProtocol <NSObject>
 
 - (RACSignal*)addFunction;
@@ -19,7 +20,7 @@
 /**
  数据到------->UI
  */
-- (RACSignal*)setNumberFunction:(NSInteger)number;
+- (RACCommand*)setNumberFunction;
 @end
 
 #endif /* PresenterProtcol_h */

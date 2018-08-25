@@ -16,6 +16,7 @@
 - (RACSignal*)interacotrAddFunction;
 - (RACSignal*)interacotrLessFunction;
 - (RACSignal*)interacotrGetNumberFunction;
-- (RACSignal*)interacotrSetNumberFunction:(NSInteger)number;
+- (RACSignal*)interacotrSetNumberFunction;
+- (RACChannelTerminal*)getCountChannel;
 @end
 #endif /* AIInteractor_h */

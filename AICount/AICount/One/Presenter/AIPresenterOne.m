@@ -18,7 +18,7 @@
     return [self.interctor interacotrLessFunction];
 }
 
-- (RACSignal*)setNumberFunction:(NSInteger)number {
-    return [self.view setLabelNumber:number];
+- (RACCommand*)setNumberFunction {
+    return [self.view setLabelNumber];
 }
 @end

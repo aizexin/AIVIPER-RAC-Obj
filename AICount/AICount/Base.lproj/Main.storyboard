@@ -62,5 +62,30 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
+        <!--Two View Controller-->
+        <scene sceneID="9mP-Bx-zvM">
+            <objects>
+                <viewController storyboardIdentifier="AITwoViewController" id="Seb-IE-lwh" customClass="AITwoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bYM-G3-5PP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O4I-2l-KIq">
+                                <rect key="frame" x="141" y="169" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="dismiss"/>
+                                <connections>
+                                    <action selector="onClickDismiss:" destination="Seb-IE-lwh" eventType="touchUpInside" id="iNS-FX-63j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GSu-QT-oKU"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aQB-yt-E1j" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="833" y="134"/>
+        </scene>
     </scenes>
 </document>

@@ -18,5 +18,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor redColor];
 }
+- (IBAction)onClickDismiss:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 @end

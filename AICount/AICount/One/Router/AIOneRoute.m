@@ -11,7 +11,7 @@
 @implementation AIOneRoute
 
 - (void)presentTwoViewControllerfrom:(UIView<AIViewOneProtocol>*)viewcontroller {
-    AITwoViewController *twoVC = [[AITwoViewController alloc]init];
+    AITwoViewController *twoVC = [[UIStoryboard storyboardWithName:@"Main" bundle:[NSBundle mainBundle]]instantiateViewControllerWithIdentifier:@"AITwoViewController"];
     [((UIViewController*)viewcontroller) presentViewController:twoVC animated:YES completion:nil];
 }
 @end

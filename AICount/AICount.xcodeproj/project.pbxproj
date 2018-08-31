@@ -17,6 +17,7 @@
 		4541B383213136DF00929481 /* AICountUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4541B382213136DF00929481 /* AICountUITests.m */; };
 		4541B3942131394B00929481 /* AIPresenterOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 4541B3932131394B00929481 /* AIPresenterOne.m */; };
 		4541B3972131396700929481 /* AIInteractorOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 4541B3962131396700929481 /* AIInteractorOne.m */; };
+		455B12E82132D8130011970A /* AIOneEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 455B12E72132D8130011970A /* AIOneEntity.m */; };
 		457D795C21315093005E960E /* AIInteractorProtocol.h in Sources */ = {isa = PBXBuildFile; fileRef = 457D795B21314DD5005E960E /* AIInteractorProtocol.h */; };
 		457D795D2131528D005E960E /* AIInteractorOne.h in Sources */ = {isa = PBXBuildFile; fileRef = 4541B3952131396700929481 /* AIInteractorOne.h */; };
 		457D79612131649E005E960E /* AIOneRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 457D79602131649E005E960E /* AIOneRoute.m */; };
@@ -53,6 +54,8 @@
 		4541B3932131394B00929481 /* AIPresenterOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIPresenterOne.m; sourceTree = "<group>"; };
 		4541B3952131396700929481 /* AIInteractorOne.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIInteractorOne.h; sourceTree = "<group>"; };
 		4541B3962131396700929481 /* AIInteractorOne.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIInteractorOne.m; sourceTree = "<group>"; };
+		455B12E62132D8130011970A /* AIOneEntity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIOneEntity.h; sourceTree = "<group>"; };
+		455B12E72132D8130011970A /* AIOneEntity.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AIOneEntity.m; sourceTree = "<group>"; };
 		457D795A21314CA4005E960E /* PresenterProtcol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresenterProtcol.h; sourceTree = "<group>"; };
 		457D795B21314DD5005E960E /* AIInteractorProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIInteractorProtocol.h; sourceTree = "<group>"; };
 		457D795E213156FB005E960E /* AIViewOneProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AIViewOneProtocol.h; sourceTree = "<group>"; };
@@ -172,6 +175,8 @@
 		4541B3902131374D00929481 /* E */ = {
 			isa = PBXGroup;
 			children = (
+				455B12E62132D8130011970A /* AIOneEntity.h */,
+				455B12E72132D8130011970A /* AIOneEntity.m */,
 			);
 			path = E;
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 				457D795C21315093005E960E /* AIInteractorProtocol.h in Sources */,
 				457D79612131649E005E960E /* AIOneRoute.m in Sources */,
 				457D79662131979F005E960E /* AITwoViewController.m in Sources */,
+				455B12E82132D8130011970A /* AIOneEntity.m in Sources */,
 				4541B36B213136DE00929481 /* ViewController.m in Sources */,
 				4541B371213136DE00929481 /* AICount.xcdatamodeld in Sources */,
 				4541B379213136DF00929481 /* main.m in Sources */,

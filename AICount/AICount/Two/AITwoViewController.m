@@ -9,6 +9,7 @@
 #import "AITwoViewController.h"
 
 @interface AITwoViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *dismissButton;
 
 @end
 
@@ -21,5 +22,14 @@
 - (IBAction)onClickDismiss:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
+- (IBAction)onClickchange:(id)sender {
+    [UIView animateWithDuration:2 animations:^{
+        self.dismissButton.backgroundColor = [UIColor greenColor];
+    } completion:^(BOOL finished) {
+        self.dismissButton.backgroundColor = [UIColor whiteColor];
+    }];
+}
+- (void)dealloc {
+    NSLog(@"AITwoViewController----dealloc");
+}
 @end

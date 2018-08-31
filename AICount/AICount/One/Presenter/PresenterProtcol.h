@@ -12,6 +12,7 @@
 //#import <ReactiveObjC.h>
 @class RACSignal;
 @class RACCommand;
+@class RACChannelTerminal;
 @protocol AIPresenterProtocol <NSObject>
 
 - (RACSignal*)addFunction;
